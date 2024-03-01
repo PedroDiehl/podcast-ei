@@ -23,10 +23,13 @@ def generate_text_to_speech():
 def list_videos():
    print('Vídeos disponíveis:')
 
-   for file in os.listdir('videos_entrevistador'):
-      if file.endswith('.mp4'):
-         print(file)
+   #for file in os.listdir('videos_entrevistador'):
+   #   if file.endswith('.mp4'):
+   #       print(file)
 
+
+   # list by comprehension
+   [print(file) for file in os.listdir('videos_entrevistador') if file.endswith('.mp4')]
    return
 
 if __name__ == "__main__":
