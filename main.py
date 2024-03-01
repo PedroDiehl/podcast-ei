@@ -1,3 +1,4 @@
+import os
 from gtts import gTTS
 
 def save_speech(text: str, file_number: int):
@@ -19,6 +20,15 @@ def generate_text_to_speech():
 
    return
 
+def list_videos():
+   print('Vídeos disponíveis:')
+
+   for file in os.listdir('videos_entrevistador'):
+      if file.endswith('.mp4'):
+         print(file)
+
+   return
+
 if __name__ == "__main__":
-   pass
+   list_videos()
    #generate_text_to_speech()
