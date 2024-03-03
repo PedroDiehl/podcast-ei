@@ -208,4 +208,4 @@ profile_default/
 ipython_config.py
 
 # End of https://www.toptal.com/developers/gitignore/api/microsoftoffice,python,dotenv
-resultado_final/*.mp4
+video_final/*.mp4
